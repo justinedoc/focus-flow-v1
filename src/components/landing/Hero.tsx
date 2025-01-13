@@ -1,5 +1,5 @@
 import CallToActionBtn from "./ui/CallToActionBtn";
-import heroOverlay1 from "../assets/hero-overlay1.png";
+import heroOverlay1 from "../../assets/hero-overlay1.png";
 function Hero() {
   return (
     <section className="w-full flex flex-col md:flex-row items-center justify-between bg-heroBg relative __section-padding h-fit bg-no-repeat bg-cover bg-bottom overflow-hidden">

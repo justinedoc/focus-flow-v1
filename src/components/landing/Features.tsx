@@ -15,8 +15,8 @@ function Features() {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 my-8 gap-9">
-        {featuresInfo.map((feature) => (
-          <FeaturesCard feature={feature} />
+        {featuresInfo.map((feature, i) => (
+          <FeaturesCard key={i} feature={feature} />
         ))}
       </div>
     </section>

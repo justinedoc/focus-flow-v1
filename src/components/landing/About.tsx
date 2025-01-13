@@ -1,5 +1,5 @@
 import SectionHeader from "./ui/SectionHeader";
-import platformImg from "../assets/platformImg.png";
+import platformImg from "../../assets/platformImg.png";
 import AboutInfoCard from "./ui/AboutInfoCard";
 import { aboutInfo } from "./constants/AboutInfo";
 

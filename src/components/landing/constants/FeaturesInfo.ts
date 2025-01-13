@@ -1,5 +1,5 @@
-import featureImg1 from "../../assets/feature_1.png";
-import featureImg2 from "../../assets/feature_2.png";
+import featureImg1 from "../../../assets/feature_1.png";
+import featureImg2 from "../../../assets/feature_2.png";
 
 export const featuresInfo = [
   {
