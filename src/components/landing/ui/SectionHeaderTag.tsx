@@ -6,7 +6,7 @@ interface SectionHeaderProps {
 
 function SectionHeaderTag({ children }: SectionHeaderProps) {
   return (
-    <span className="px-3 py-1 font-medium text-sm text-black border-2 border-[#2222221a] rounded-xl w-fit">
+    <span className="px-3 py-1 font-medium text-sm text-black border-2 border-[#2222221a] rounded-lg w-fit">
       {children}
     </span>
   );

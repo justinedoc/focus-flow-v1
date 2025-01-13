@@ -14,7 +14,7 @@ function Features() {
         tag="Everything you need"
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 my-8 gap-9">
+      <div className="grid grid-cols-1 xl:grid-cols-3 my-8 gap-9">
         {featuresInfo.map((feature, i) => (
           <FeaturesCard key={i} feature={feature} />
         ))}

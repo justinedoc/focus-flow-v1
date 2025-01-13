@@ -14,4 +14,10 @@ export const featuresInfo = [
     description:
       "Enhance your efficiency by centralizing your tasks and tools, bringing everything together.",
   },
+  {
+    image: featureImg2,
+    title: "Integration ecosystem",
+    description:
+      "Enhance your efficiency by centralizing your tasks and tools, bringing everything together.",
+  },
 ] as const;

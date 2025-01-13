@@ -1,6 +1,7 @@
 import About from "./About";
 import Features from "./Features";
 import Hero from "./Hero";
+import Testimonials from "./Testimonials";
 import Navbar from "./ui/Navbar";
 
 function Pages() {
@@ -10,6 +11,7 @@ function Pages() {
       <Hero />
       <About />
       <Features />
+      <Testimonials />
     </main>
   );
 }

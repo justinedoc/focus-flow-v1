@@ -10,7 +10,7 @@ interface AboutInfoCardProps {
 }
 function AboutInfoCard({ info }: AboutInfoCardProps) {
   return (
-    <main className="flex flex-col text-sm p-2">
+    <main className="flex flex-col text-sm p-2 min-w-[15rem]">
       <span>{info.icon}</span>
       <h1 className="text-base font-bold my-2">{info.title}</h1>
       <p className="font-light">{info.description}</p>
