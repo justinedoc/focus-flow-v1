@@ -10,10 +10,10 @@ interface AboutInfoCardProps {
 }
 function AboutInfoCard({ info }: AboutInfoCardProps) {
   return (
-    <main className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+    <main className="flex flex-col text-sm p-2">
       <span>{info.icon}</span>
-      <h1>{info.title}</h1>
-      <p>{info.description}</p>
+      <h1 className="text-base font-bold my-2">{info.title}</h1>
+      <p className="font-light">{info.description}</p>
       <CallToActionBtn withBtn={false} />
     </main>
   );

@@ -1,4 +1,5 @@
 import About from "./About";
+import Features from "./Features";
 import Hero from "./Hero";
 import Navbar from "./ui/Navbar";
 
@@ -8,6 +9,7 @@ function Pages() {
       <Navbar />
       <Hero />
       <About />
+      <Features />
     </main>
   );
 }

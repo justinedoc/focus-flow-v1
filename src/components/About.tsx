@@ -15,9 +15,11 @@ function About() {
         <img src={platformImg} alt="dashboard image" className="w-full" />
       </main>
 
-      {aboutInfo.map((info) => (
-        <AboutInfoCard info={info} />
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center mb-10">
+        {aboutInfo.map((info) => (
+          <AboutInfoCard key={info.title} info={info} />
+        ))}
+      </div>
     </section>
   );
 }
