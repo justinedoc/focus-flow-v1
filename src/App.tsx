@@ -1,5 +1,15 @@
+import Hero from "./components/Hero";
+import Navbar from "./components/ui/Navbar";
+
 function App() {
-  return <h1 className="text-3xl uppercase">Hello world</h1>;
+  return (
+    <section className="xl:max-w-[80rem]">
+      <main className="xl:flex xl:justify-center xl:items-center xl:flex-col">
+        <Navbar />
+        <Hero />
+      </main>
+    </section>
+  );
 }
 
 export default App;
