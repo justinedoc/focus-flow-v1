@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 interface CallToActionBtnProps {
   withBtn: boolean;
-  label: string;
+  label?: string;
   handleClick?: () => void;
 }
 function CallToActionBtn({

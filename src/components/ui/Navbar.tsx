@@ -20,10 +20,10 @@ function Navbar() {
         </ul>
 
         <div className="flex gap-3 items-center">
-          <button className="w-fit px-4 py-1 bg-black text-white ring-2 ring-black text-sm rounded-md font-semibold">
+          <button className="w-20 px-2 py-[0.4rem] bg-black text-white ring-2 ring-black text-sm rounded-md font-semibold">
             Sign Up
           </button>
-          <button className="w-fit px-3 py-1 bg-white ring-2 ring-black text-sm rounded-md font-semibold">
+          <button className="w-20 px-2 py-[0.4rem] bg-transparent ring-2 ring-black text-sm rounded-md font-semibold">
             Log In
           </button>
         </div>
