@@ -1,3 +1,4 @@
+import { testimonialInfo } from "./constants/TestimonialInfo";
 import SectionHeader from "./ui/SectionHeader";
 import TestimonialCard from "./ui/TestimonialCard";
 
@@ -9,9 +10,16 @@ function Testimonials() {
     >
       <SectionHeader tag="Testimonials" title="What our users say" />
 
-      <article className="grid grid-cols-1 lg:grid-cols-2 my-8 gap-9">
-        <main>
-          <TestimonialCard />
+      <article className="flex flex-col gap-10 my-8">
+        <main className="__testimonial-card">
+          {testimonialInfo.slice(0, 3).map((testimonial) => (
+            <TestimonialCard data={testimonial} />
+          ))}
+        </main>
+        <main className="__testimonial-card">
+          {testimonialInfo.slice(3, 6).map((testimonial) => (
+            <TestimonialCard data={testimonial} />
+          ))}
         </main>
       </article>
     </section>

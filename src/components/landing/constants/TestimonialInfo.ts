@@ -8,44 +8,44 @@ import testimonialImg6 from "../../../assets/testimonial_6.png";
 export const testimonialInfo = [
   {
     image: testimonialImg1,
-    name: "Josh Smith",
-    username: "@jjsmith",
+    name: "Emma Johnson",
+    username: "@emmaj",
     content:
-      "Our team’s productivity has skyrocketed since we started using this tool. ",
+      "FocusFlow has completely streamlined my daily workflow. I feel more organized and productive than ever!",
   },
   {
     image: testimonialImg2,
-    name: "Taylor Kim",
-    username: "@taylorkimm",
+    name: "Liam Carter",
+    username: "@liamc",
     content:
-      "Planning and executing events has never been easier. This app helps me keep track of all the moving parts.",
+      "With FocusFlow, I never miss a deadline. The intuitive design and powerful features keep me on track effortlessly.",
   },
   {
     image: testimonialImg3,
-    name: "Sam Dawson",
-    username: "@dawsontechtips",
+    name: "Sophia Brown",
+    username: "@sophiebrownie",
     content:
-      "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+      "The team collaboration tools in FocusFlow have made project management a breeze for our company.",
   },
   {
     image: testimonialImg4,
-    name: "Morgan Lee",
-    username: "@morganleewhiz",
+    name: "Noah Davis",
+    username: "@noahd",
     content:
-      "This app has completely transformed how I manage my projects and deadlines.",
+      "I’ve tried other tools, but none compare to the simplicity and efficiency of FocusFlow. Highly recommended!",
   },
   {
     image: testimonialImg5,
-    name: "Riley Smith",
-    username: "@rileysmith1",
+    name: "Olivia Taylor",
+    username: "@oliviat",
     content:
-      "The customizability and integration capabilities of this app are top-notch.",
+      "FocusFlow’s ability to integrate with my favorite tools has been a game-changer for productivity.",
   },
   {
     image: testimonialImg6,
-    name: "Casey Harper",
-    username: "@casey09",
+    name: "James Wilson",
+    username: "@jamesw",
     content:
-      "Its user-friendly interface and robust features support our diverse needs.",
+      "From personal tasks to team projects, FocusFlow keeps everything organized and easy to manage.",
   },
 ] as const;
