@@ -2,26 +2,27 @@ import tseslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import reactPlugin from "eslint-plugin-react";
 import globals from "globals";
+import reactHooks from "eslint-plugin-react-hooks";
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
-    files: ["**/*.{js,mjs,cjs,jsx,ts,tsx}"], // Matches all JavaScript and TypeScript files
+    files: ["**/*.{js,mjs,cjs,jsx,ts,tsx}"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"], // Path to your TypeScript config
-        tsconfigRootDir: import.meta.dirname, // Ensures paths resolve correctly
-        ecmaVersion: "latest", // Use the latest ECMAScript standard
-        sourceType: "module", // Enable ECMAScript modules
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+        tsconfigRootDir: import.meta.dirname,
+        ecmaVersion: "latest",
+        sourceType: "module",
       },
       globals: {
-        ...globals.browser, // Browser globals like `window` and `document`
+        ...globals.browser,
       },
     },
     settings: {
       react: {
-        version: "detect", // Automatically detects the React version
+        version: "detect",
       },
     },
     plugins: {
@@ -30,25 +31,27 @@ export default [
     },
     rules: {
       // TypeScript Rules
-      ...tseslint.configs.strictTypeChecked.rules, // Strict type checking
-      ...tseslint.configs.stylisticTypeChecked.rules, // Enforce consistent code style
-      "no-unused-vars": "off", // Disable the base rule
+      ...tseslint.configs.strictTypeChecked.rules,
+      ...tseslint.configs.stylisticTypeChecked.rules,
+      "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
-      ], // Enforce no unused variables, ignoring those starting with `_`
+      ],
 
-      // React Rules
+      // React Rules - Using all recommended configurations
+      ...reactPlugin.configs.recommended.rules,
+      ...reactPlugin.configs["jsx-runtime"].rules,
       ...reactHooks.configs.recommended.rules,
-      ...reactPlugin.configs.recommended.rules, // React recommended rules
-      ...reactPlugin.configs["jsx-runtime"].rules, // JSX runtime-specific rules
-      "react/react-in-jsx-scope": "off", // Not required with new JSX transform
-      "react/jsx-uses-react": "off", // Not required with new JSX transform
+
+      // Only override what's needed
+      "react/react-in-jsx-scope": "off", // Not needed with new JSX transform
+      "react/jsx-uses-react": "off", // Not needed with new JSX transform
 
       // Additional Custom Rules
-      "no-console": ["warn", { allow: ["warn", "error"] }], // Allow `console.warn` and `console.error`
-      curly: "error", // Enforce consistent use of curly braces
-      eqeqeq: ["error", "always"], // Require strict equality
+      "no-console": ["warn", { allow: ["warn", "error"] }],
+      curly: "error",
+      eqeqeq: ["error", "always"],
     },
   },
 ];

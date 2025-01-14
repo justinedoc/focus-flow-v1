@@ -20,7 +20,7 @@ function CallToActionBtn({
           {label}
         </button>
       )}
-      <span className="flex gap-2 items-center">
+      <span className="flex gap-2 items-center cursor-pointer">
         <a href="#about">Learn More</a>
         <FaArrowRightLong />
       </span>
