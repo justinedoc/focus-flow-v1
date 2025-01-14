@@ -1,4 +1,5 @@
 import SectionHeader from "./ui/SectionHeader";
+import TestimonialCard from "./ui/TestimonialCard";
 
 function Testimonials() {
   return (
@@ -8,7 +9,11 @@ function Testimonials() {
     >
       <SectionHeader tag="Testimonials" title="What our users say" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 my-8 gap-9"></div>
+      <article className="grid grid-cols-1 lg:grid-cols-2 my-8 gap-9">
+        <main>
+          <TestimonialCard />
+        </main>
+      </article>
     </section>
   );
 }
