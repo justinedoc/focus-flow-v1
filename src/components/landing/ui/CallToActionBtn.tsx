@@ -14,7 +14,7 @@ function CallToActionBtn({
     <div className="flex items-center gap-4 my-3">
       {withBtn && (
         <button
-          className="bg-black px-4 py-2 text-white w-fit rounded-md"
+          className="bg-black px-4 py-2 text-white w-fit rounded-md font-medium text-md"
           onClick={handleClick}
         >
           {label}

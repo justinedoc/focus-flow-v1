@@ -6,7 +6,7 @@ function Features() {
   return (
     <section
       id="#features"
-      className="__section-padding flex flex-col items-center"
+      className="__section-padding flex flex-col items-center gap-8"
     >
       <SectionHeader
         title="Streamlined for easy management"
@@ -14,7 +14,7 @@ function Features() {
         tag="Everything you need"
       />
 
-      <div className="grid grid-cols-1 xl:grid-cols-3 my-8 gap-9">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-9">
         {featuresInfo.map((feature, i) => (
           <FeaturesCard key={i} feature={feature} />
         ))}
