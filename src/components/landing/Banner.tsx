@@ -21,13 +21,13 @@ function Banner() {
         src={BannerImg1}
         alt="Star Image"
         loading="lazy"
-        className="absolute size-[18rem] xl:left-12 top-0"
+        className="absolute size-[18rem] hidden md:block md:-left-10 xl:left-12 top-0"
       />
       <img
         src={BannerImg2}
         alt="Spring Image"
         loading="lazy"
-        className="absolute size-[18rem] xl:right-12 top-0"
+        className="absolute size-[18rem] hidden md:block md:-right-10 xl:right-12 top-0"
       />
     </section>
   );
