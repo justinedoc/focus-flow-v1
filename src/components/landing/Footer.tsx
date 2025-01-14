@@ -21,54 +21,26 @@ function Footer() {
       </main>
 
       <nav className="border col-span-3">
-        <table>
+        <table className="w-full">
           <tbody>
-            {footerNavs.map((footer, i) => (
-              <tr>
-                <th>{footer[i].category}</th>
-                
-              </tr>
+            {footerNavs.map((group, i) => (
+              <>
+                <tr key={i}>
+                  <th className="text-white font-semibold p-2 text-left">
+                    {group[0]?.category}
+                  </th>
+                </tr>
+                <tr>
+                  <td className="p-2">
+                    {group.map((footer) => (
+                      <a key={footer.text} href={footer.href} className="block">
+                        {footer.text}
+                      </a>
+                    ))}
+                  </td>
+                </tr>
+              </>
             ))}
-            <tr>
-              <th className="text-white font-bold text-sm">Product</th>
-              <td>
-                <a href="#features">Features</a>
-                <a href="#features">Integrations</a>
-                <a href="#features">Updates</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#faq">FAQ</a>
-              </td>
-            </tr>
-            <tr>
-              <th className="text-white font-bold text-sm">Company</th>
-              <td>
-                <a href="#features">About</a>
-                <a href="#features">Blog</a>
-                <a href="#features">Careers</a>
-                <a href="#pricing">Manifesto</a>
-                <a href="#pricing">Press</a>
-                <a href="#faq">Contact</a>
-              </td>
-            </tr>
-
-            <tr>
-              <th className="text-white font-bold text-sm">Resources</th>
-              <td>
-                <a href="#features">Examples</a>
-                <a href="#features">Community</a>
-                <a href="#features">Guides</a>
-                <a href="#pricing">Docs</a>
-              </td>
-            </tr>
-
-            <tr>
-              <th className="text-white font-bold text-sm">Legal</th>
-              <td>
-                <a href="#pricing">Privacy</a>
-                <a href="#features">Terms</a>
-                <a href="#pricing">Security</a>
-              </td>
-            </tr>
           </tbody>
         </table>
       </nav>
