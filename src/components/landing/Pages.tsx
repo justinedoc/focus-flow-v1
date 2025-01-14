@@ -1,6 +1,7 @@
 import About from "./About";
 import Banner from "./Banner";
 import Features from "./Features";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Testimonials from "./Testimonials";
 import Navbar from "./ui/Navbar";
@@ -14,6 +15,7 @@ function Pages() {
       <Features />
       <Testimonials />
       <Banner />
+      <Footer />
     </main>
   );
 }

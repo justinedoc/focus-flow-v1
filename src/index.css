@@ -18,5 +18,5 @@
 }
 
 .__testimonial-card {
-  @apply flex gap-4 overflow-x-auto;
+  @apply flex gap-4 overflow-x-scroll;
 }
