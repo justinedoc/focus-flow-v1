@@ -12,7 +12,7 @@ function About() {
           description="FocusFlow keeps you on track, inspires your journey, and celebrates your wins"
           tag="Boost your productivity"
         />
-        <img src={platformImg} alt="dashboard image" className="w-full" />
+        <img loading="lazy" src={platformImg} alt="dashboard image" className="w-full" />
       </main>
 
       <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mb-10">

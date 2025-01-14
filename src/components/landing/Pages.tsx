@@ -1,4 +1,5 @@
 import About from "./About";
+import Banner from "./Banner";
 import Features from "./Features";
 import Hero from "./Hero";
 import Testimonials from "./Testimonials";
@@ -12,6 +13,7 @@ function Pages() {
       <About />
       <Features />
       <Testimonials />
+      <Banner />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import SectionHeaderTag from "./SectionHeaderTag";
 
 interface SectionHeaderProps {
-  tag: string;
+  tag?: string;
   title: string;
   description?: string;
 }

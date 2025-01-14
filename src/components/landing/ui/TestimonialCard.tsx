@@ -13,6 +13,7 @@ function TestimonialCard({ data }: TestimonialCardProps) {
       <p>{data.content}</p>
       <div className="flex gap-2 items-center">
         <img
+          loading="lazy"
           src={data.image}
           alt="profile image"
           className="rounded-full size-8"
