@@ -5,15 +5,14 @@ import TestimonialCard from "./ui/TestimonialCard";
 function Testimonials() {
   return (
     <section
-      id="#features"
+      id="features"
       className="__section-padding flex flex-col items-center"
     >
       <SectionHeader tag="Testimonials" title="What our users say" />
-
-      <article className="flex flex-col gap-10 my-8">
+      <article className="flex flex-col gap-10 my-8 w-full">
         <main className="__testimonial-card">
-          {testimonialInfo.slice(0, 3).map((testimonial) => (
-            <TestimonialCard data={testimonial} />
+          {testimonialInfo.slice(0, 3).map((testimonial, index) => (
+            <TestimonialCard key={index} data={testimonial} />
           ))}
         </main>
         <main className="__testimonial-card">

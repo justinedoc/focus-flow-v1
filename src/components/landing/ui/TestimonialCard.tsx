@@ -9,7 +9,7 @@ interface TestimonialCardProps {
 
 function TestimonialCard({ data }: TestimonialCardProps) {
   return (
-    <div className="text-[0.8rem] w-[20rem] lg:max-w-[16rem] flex flex-col justify-between gap-3 p-6 shadow-lg rounded-lg font-light">
+    <div className="text-[0.8rem] lg:max-w-[16rem] flex flex-col justify-between gap-3 p-6 shadow-md rounded-xl font-light border border-[#F1F1F1] my-2">
       <p>{data.content}</p>
       <div className="flex gap-2 items-center">
         <img
