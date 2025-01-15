@@ -21,26 +21,28 @@ function Footer() {
       </main>
 
       <nav className="col-span-3 font-light text-[#7B7B7B] text-lg">
-        <table className="w-full flex flex-shrink-0 flex-wrap md:flex-row md:justify-end gap-5 md:gap-12 justify-between">
+        <main className="w-full flex flex-shrink-0 flex-wrap md:justify-end gap-5 md:gap-16 justify-between items-start">
           {footerNavs.map((group, i) => (
-            <tbody>
-              <tr key={i}>
-                <th className="text-white font-semibold text-left pb-5">
-                  {group[0]?.category}
-                </th>
-              </tr>
-              <tr>
-                <td className="flex flex-col gap-5">
-                  {group.map((footer) => (
-                    <a key={footer.text} href={footer.href}>
-                      {footer.text}
-                    </a>
-                  ))}
-                </td>
-              </tr>
-            </tbody>
+            <table key={i}>
+              <tbody>
+                <tr>
+                  <th className="text-white font-semibold text-left pb-5">
+                    {group[0]?.category}
+                  </th>
+                </tr>
+                <tr>
+                  <td className="flex flex-col gap-5">
+                    {group.map((footer) => (
+                      <a key={footer.text} href={footer.href}>
+                        {footer.text}
+                      </a>
+                    ))}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           ))}
-        </table>
+        </main>
       </nav>
     </footer>
   );
