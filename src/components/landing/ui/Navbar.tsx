@@ -58,7 +58,7 @@ function MobileNavbar() {
   return (
     <nav
       ref={navRef}
-      className="bg-[#EAEEFE] w-full px-2 py-3 flex justify-between items-center sticky top-0 left-0 z-20 border"
+      className="bg-[#EAEEFE] w-full px-4 py-3 flex justify-between items-center sticky top-0 left-0 z-20 border"
     >
       <header className="flex gap-1 items-center">
         <img src={logoImg} alt="logo" width={50} height={40} />
