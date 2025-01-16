@@ -16,7 +16,7 @@ function Pricing() {
         {pricingInfo.map((pricingInfo) => (
           <main
             key={pricingInfo.plan}
-            className="flex flex-col gap-5 p-8 min-w-[20rem] md:min-w-[18rem] rounded-2xl border shadow-md text-sm"
+            className="flex flex-col gap-5 p-8 min-w-[20rem] md:min-w-[18rem] rounded-2xl border shadow-md text-sm transition duration-500 hover:-translate-y-4 cursor-pointer"
             style={{
               backgroundColor: pricingInfo.inBlack ? "black" : "white",
               color: !pricingInfo.inBlack ? "black" : "white",
