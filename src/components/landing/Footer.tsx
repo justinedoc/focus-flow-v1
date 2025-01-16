@@ -5,15 +5,25 @@ function Footer() {
   return (
     <footer className="text-[#BCBCBC] bg-black w-full p-5 gap-10 md:gap-0 md:p-12 grid grid-cols-1 md:grid-cols-4">
       <main className="flex flex-col md:min-h-[15rem] col-span-1">
-        <img src="/logo.svg" alt="logo" loading="lazy" width={70} className="-translate-x-3" />
-        <p className="font-light mb-5 md:my-3">
+        <img
+          src="/logo.svg"
+          alt="logo"
+          loading="lazy"
+          width={70}
+          className="-translate-x-3 __anim-right __delay-200"
+        />
+        <p className="font-light mb-5 md:my-3 __anim-left __delay-300">
           Effortlessly turn your ideas into a fully functional, responsive,
           no-code SaaS website.
         </p>
 
         <div className="flex gap-5 items-center mt-auto">
-          {socialNavs.map((link) => (
-            <a key={link.name} href={link.url} className="text-[#808080]">
+          {socialNavs.map((link, i) => (
+            <a
+              key={link.name}
+              href={link.url}
+              className={`text-[#808080] __anim-top __delay-${(i + 1) * 200}`}
+            >
               {link.icon}
             </a>
           ))}
@@ -26,14 +36,22 @@ function Footer() {
             <table key={i}>
               <tbody>
                 <tr>
-                  <th className="text-white font-semibold text-left pb-5">
+                  <th
+                    className={`text-white font-semibold text-left pb-5 __anim-top __delay-${
+                      (i + 1) * 200
+                    }`}
+                  >
                     {group[0]?.category}
                   </th>
                 </tr>
                 <tr>
                   <td className="flex flex-col gap-5">
-                    {group.map((footer) => (
-                      <a key={footer.text} href={footer.href}>
+                    {group.map((footer, i) => (
+                      <a
+                        key={footer.text}
+                        href={footer.href}
+                        className={`__anim-bottom __delay-${(i + 1) * 200}`}
+                      >
                         {footer.text}
                       </a>
                     ))}

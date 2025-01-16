@@ -13,10 +13,12 @@ function Pricing() {
       />
 
       <div className="flex flex-wrap gap-8 mt-7 justify-center md:items-end">
-        {pricingInfo.map((pricingInfo) => (
+        {pricingInfo.map((pricingInfo, i) => (
           <main
             key={pricingInfo.plan}
-            className="flex flex-col gap-5 p-8 min-w-[20rem] md:min-w-[18rem] rounded-2xl border shadow-md text-sm transition duration-500 hover:-translate-y-4 cursor-pointer"
+            className={`flex flex-col gap-5 p-8 min-w-[20rem] md:min-w-[18rem] rounded-2xl border shadow-md text-sm transition duration-500 hover:-translate-y-4 cursor-pointer __anim-top __delay-${
+              (i + 1) * 200
+            }`}
             style={{
               backgroundColor: pricingInfo.inBlack ? "black" : "white",
               color: !pricingInfo.inBlack ? "black" : "white",
@@ -72,10 +74,12 @@ function Button({
 function FeaturesList({ features }: { features: string[] }) {
   return (
     <ul className="space-y-5">
-      {features.map((feature) => (
+      {features.map((feature, i) => (
         <div
           key={feature}
-          className="flex gap-3 items-center text-sm font-light"
+          className={`flex gap-3 items-center text-sm font-light __anim-bottom __delay-${
+            (i + 1) * 200
+          }`}
         >
           <GiCheckMark />
           <span>{feature}</span>

@@ -16,13 +16,13 @@ function About() {
           loading="lazy"
           src={platformImg}
           alt="dashboard image"
-          className="w-full"
+          className="w-full __anim-top __delay-500"
         />
       </main>
 
       <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mb-10 place-items-center">
-        {aboutInfo.map((info) => (
-          <AboutInfoCard key={info.title} info={info} />
+        {aboutInfo.map((info, i) => (
+          <AboutInfoCard key={info.title} info={info} index={i + 1} />
         ))}
       </article>
     </section>
