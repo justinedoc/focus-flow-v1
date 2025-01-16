@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Features from "./Features";
 import Footer from "./Footer";
 import Hero from "./Hero";
+import Pricing from "./Pricing";
 import Testimonials from "./Testimonials";
 import Navbar from "./ui/Navbar";
 
@@ -13,6 +14,7 @@ function Pages() {
       <Hero />
       <About />
       <Features />
+      <Pricing />
       <Testimonials />
       <Banner />
       <Footer />
