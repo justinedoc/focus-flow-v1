@@ -5,7 +5,7 @@ import TestimonialCard from "./ui/TestimonialCard";
 function Testimonials() {
   return (
     <section
-      id="features"
+      id="#testimonials"
       className="__section-padding flex flex-col items-center"
     >
       <SectionHeader tag="Testimonials" title="What our users say" />

@@ -3,7 +3,8 @@ import logoImg from "../../../assets/logo.png";
 import useScreenSize from "../hooks/useScreenSize";
 import { useEffect, useRef, useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
-const navItems = ["About", "Features", "Testimonials"];
+import { navItems } from "../constants/NavItems";
+
 function Navbar() {
   const { isSmallScreened } = useScreenSize();
 
@@ -20,12 +21,12 @@ function Navbar() {
 
       <div className="flex gap-10 items-center">
         <ul className="flex">
-          {navItems.map((item, index) => (
+          {navItems.map(({ name, link }, index) => (
             <li
               key={index}
               className="px-3 py-3 text-sm text-black/80 transition duration-300 hover:text-black"
             >
-              <a href={`#${item.toLocaleLowerCase()}`}>{item}</a>
+              <a href={`#${link}`}>{name}</a>
             </li>
           ))}
         </ul>
@@ -75,9 +76,9 @@ function MobileNavbar() {
       >
         <div className="flex gap-6 items-center flex-col min-w-44 py-5 relative">
           <ul className="flex flex-col justify-start w-full">
-            {navItems.map((item, index) => (
+            {navItems.map(({ name, link }, index) => (
               <li key={index} className="px-3 py-3 text-base text-black/80">
-                <a href={`#${item.toLocaleLowerCase()}`}>{item}</a>
+                <a href={`#${link}`}>{name}</a>
               </li>
             ))}
           </ul>
