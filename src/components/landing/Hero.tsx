@@ -2,7 +2,7 @@ import CallToActionBtn from "./ui/CallToActionBtn";
 import heroOverlay1 from "../../assets/hero-overlay1.png";
 function Hero() {
   return (
-    <section className="w-full flex flex-col md:flex-row items-center gap-10 md:gap-0 justify-between bg-heroBg relative __section-padding h-fit bg-no-repeat bg-cover bg-bottom overflow-hidden">
+    <section className="w-full flex flex-col md:flex-row items-center gap-10 md:gap-0 justify-between bg-heroBg relative __section-padding min-h-screen bg-no-repeat bg-cover bg-bottom overflow-hidden">
       <main>
         <h1 className="text-[3.5rem] md:text-[4rem] __text-grad font-bold leading-tight my-7">
           Pathway to <br /> productivity

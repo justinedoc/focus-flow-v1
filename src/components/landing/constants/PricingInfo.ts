@@ -1,4 +1,14 @@
-export const pricingInfo = [
+export type PricingPlan = {
+  plan: string;
+  price: number;
+  features: string[];
+  link: string;
+  tag: string;
+  duration: string;
+  inBlack: boolean;
+};
+
+export const pricingInfo: PricingPlan[] = [
   {
     plan: "free",
     price: 0,
@@ -10,7 +20,9 @@ export const pricingInfo = [
       "Basic support",
     ],
     link: "#",
+    tag: "",
     duration: "monthly",
+    inBlack: false,
   },
   {
     plan: "Pro",
@@ -46,6 +58,8 @@ export const pricingInfo = [
       "Advanced security features",
     ],
     link: "#",
+    tag: "",
     duration: "monthly",
+    inBlack: false,
   },
-] as const;
+];
