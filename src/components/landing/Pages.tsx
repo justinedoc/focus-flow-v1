@@ -12,12 +12,11 @@ import { animations } from "./animations";
 
 function Pages() {
   useEffect(() => {
-    const sr = ScrollReveal({
+    const sr = ScrollReveal?.({
       distance: "15px",
       duration: 1000,
-      delay: 150,
-      reset: true,
-      opacity: 0,
+      delay: 100,
+      reset: false,
     });
     animations(sr);
   }, []);
