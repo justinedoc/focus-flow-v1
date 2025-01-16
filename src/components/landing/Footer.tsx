@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="text-[#BCBCBC] bg-black w-full p-5 gap-10 md:gap-0 md:p-12 grid grid-cols-1 md:grid-cols-4">
       <main className="flex flex-col md:min-h-[15rem] col-span-1">
-        <img src="/logo.svg" alt="logo" width={70} className="-translate-x-3" />
+        <img src="/logo.svg" alt="logo" loading="lazy" width={70} className="-translate-x-3" />
         <p className="font-light mb-5 md:my-3">
           Effortlessly turn your ideas into a fully functional, responsive,
           no-code SaaS website.

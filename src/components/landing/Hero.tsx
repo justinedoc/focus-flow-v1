@@ -16,12 +16,7 @@ function Hero() {
       </main>
 
       <aside>
-        <img
-          src={heroOverlay1}
-          loading="lazy"
-          alt="hero image"
-          className="w-[33rem]"
-        />
+        <img src={heroOverlay1} alt="hero image" className="w-[33rem]" />
       </aside>
     </section>
   );
