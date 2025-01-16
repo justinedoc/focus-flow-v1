@@ -14,15 +14,20 @@ function CallToActionBtn({
     <div className="flex items-center gap-4 my-3">
       {withBtn && (
         <button
-          className="bg-black px-4 py-2 text-white w-fit rounded-md font-medium text-md"
+          className="bg-black px-4 py-2 text-white w-fit rounded-md font-medium text-md transition duration-300 hover:bg-black/75"
           onClick={handleClick}
         >
           {label}
         </button>
       )}
-      <span className="flex gap-2 items-center cursor-pointer">
-        <a href="#about">Learn More</a>
-        <FaArrowRightLong />
+      <span className="flex gap-2 items-center cursor-pointer group">
+        <a
+          href="#about"
+          className="transition duration-300 group-hover:text-black/70"
+        >
+          Learn More
+        </a>
+        <FaArrowRightLong className="group-hover:scale-110 transition duration-300 group-hover:translate-x-2" />
       </span>
     </div>
   );

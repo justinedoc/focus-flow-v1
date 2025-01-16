@@ -21,7 +21,10 @@ function Navbar() {
       <div className="flex gap-10 items-center">
         <ul className="flex">
           {navItems.map((item, index) => (
-            <li key={index} className="px-3 py-3 text-sm text-black/80">
+            <li
+              key={index}
+              className="px-3 py-3 text-sm text-black/80 transition duration-300 hover:text-black"
+            >
               <a href={`#${item.toLocaleLowerCase()}`}>{item}</a>
             </li>
           ))}
@@ -66,14 +69,14 @@ function MobileNavbar() {
       <RiMenu3Fill size={24} onClick={() => setShowNavbar(true)} />
 
       <aside
-        className={`fixed top-0 -right-96 bg-[#EAEEFE] shadow-md rounded-l-lg min-h-66 transition duration-300 ${
+        className={`fixed top-0 -right-96 bg-[#EAEEFE] shadow-md rounded-l-lg min-h-66 transition duration-300 p-10 ${
           showNavBar ? "-translate-x-96" : ""
         }`}
       >
-        <div className="flex gap-6 items-center flex-col px-10 py-5 relative">
-          <ul className="flex flex-col">
+        <div className="flex gap-6 items-center flex-col min-w-44 py-5 relative">
+          <ul className="flex flex-col justify-start w-full">
             {navItems.map((item, index) => (
-              <li key={index} className="px-3 py-3 text-sm text-black/80">
+              <li key={index} className="px-3 py-3 text-base text-black/80">
                 <a href={`#${item.toLocaleLowerCase()}`}>{item}</a>
               </li>
             ))}
@@ -82,7 +85,7 @@ function MobileNavbar() {
           <AuthBtns />
           <FaXmark
             size={24}
-            className="absolute top-3 right-3"
+            className="absolute -top-5 -right-5"
             onClick={() => setShowNavbar(false)}
           />
         </div>
@@ -93,11 +96,11 @@ function MobileNavbar() {
 
 function AuthBtns() {
   return (
-    <div className="flex gap-3 items-center flex-col md:flex-row">
-      <button className="md:w-20 w-28 px-2 py-[0.4rem] bg-black text-white ring-2 ring-black text-sm rounded-md font-semibold">
+    <div className="flex gap-3 items-center flex-col md:flex-row w-full">
+      <button className="md:w-20 w-full px-2 py-[0.4rem] bg-black text-white ring-2 ring-black text-sm rounded-md font-semibold transition duration-300 hover:bg-black/80">
         Sign Up
       </button>
-      <button className="md:w-20 w-28 px-2 py-[0.4rem] bg-transparent ring-2 ring-black text-sm rounded-md font-semibold">
+      <button className="md:w-20 w-full px-2 py-[0.4rem] bg-transparent ring-2 ring-black text-sm rounded-md font-semibold transition duration-300 hover:ring-black/60">
         Log In
       </button>
     </div>
